@@ -47,6 +47,11 @@ def dkey(request):
     return render(request, "pages/dkey.html", {})
 
 
+def itvpn(request):
+
+    return render(request, "pages/itvpn.html", {})
+
+
 def attestation(request):
 
     return render(request, "pages/attestation.html", {})
