@@ -35,7 +35,9 @@
         </div>
         <!-- форма конец -->
     </div>
-    <div id="map" style="height: 700px;"></div>
+    <div style="height: 700px;">
+        <iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=27.519228458404545%2C53.86756374883373%2C27.525504827499393%2C53.870163776372934&amp;layer=mapnik&amp;marker=53.868863782805285%2C27.522366642951965" style="border: 1px solid black"></iframe>
+    </div>
 
     {% include "footer.html" %}
 
@@ -43,30 +45,6 @@
 
 </div>
 <!-- Скрипты -->
-    <script>
-      function initMap() {
-        var uluru = {lat: 53.901368, lng: 27.473429};
-        var work = {lat: 53.901368, lng: 27.477629};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: uluru,
-          scrollwheel: false,
-          streetViewControl: false,
-          mapTypeControl: false,
-        });
-        var marker = new google.maps.Marker({
-          position: work,
-          map: map
-        });
-        var styles = [{"featureType":"all","elementType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]}];
-        map.setOptions({styles: styles});
-      }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLvTmhh6rDPJc2jXN5yqSuox6gmX-zfmI&callback=initMap">
-    </script>
-
-
 <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
