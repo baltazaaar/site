@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^ru/company/', views.company, name='o-kompanii'),
 
     url(r'^vacancies/', views.vacancies, name='vacancies'),
+    url(r'^sitemap.xml', views.sitemap, name='sitemap'),
 ]
 
 if settings.DEBUG:

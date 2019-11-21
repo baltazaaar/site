@@ -95,3 +95,8 @@ def company(request):
 def vacancies(request):
 
     return render(request, "pages/vacancies.html", {})
+
+
+def sitemap(request):
+
+    return render(request, 'sitemap.xml', content_type='text/xml')
