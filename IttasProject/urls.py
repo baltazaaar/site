@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^company/razrabotka-programmnogo-obespecheniya/', views.razrabotka, name='razrabotka-programmnogo-obespecheniya'),
     url(r'^company/o-kompanii/', views.company, name='o-kompanii'),
 
+    url(r'^ru/company/', views.company, name='o-kompanii'),
+
     url(r'^vacancies/', views.vacancies, name='vacancies'),
 ]
 
