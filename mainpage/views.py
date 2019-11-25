@@ -47,6 +47,11 @@ def dkey(request):
     return render(request, "pages/dkey.html", {})
 
 
+def dkeysd(request):
+
+    return render(request, "pages/dkeysd.html", {})
+
+
 def itvpn(request):
 
     return render(request, "pages/itvpn.html", {})

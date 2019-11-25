@@ -14,6 +14,7 @@ urlpatterns = [
     url(r'^solutions/scna/', views.scna, name='scna'),
     url(r'^solutions/cna/', views.cna, name='cna'),
     url(r'^solutions/d-key/', views.dkey, name='dkey'),
+    url(r'^solutions/d-keysd/', views.dkeysd, name='dkeysd'),
     url(r'^solutions/itvpn/', views.itvpn, name='itvpn'),
 
     url(r'^laboratory/attestation/', views.attestation, name='attestation'),
