@@ -4,6 +4,7 @@ Disallow: /*.ppt
 Disallow: /*.doc
 Disallow: /*.xls
 Disallow: /*.txt
+Disallow: /cna.ittas.by*
 
 User-agent: Yandex
 Disallow: /admin

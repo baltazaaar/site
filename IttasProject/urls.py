@@ -32,6 +32,7 @@ urlpatterns = [
     url(r'^vacancies/', views.vacancies, name='vacancies'),
     url(r'^sitemap.xml', views.sitemap, name='sitemap'),
     url(r'^robots.txt', views.robots, name='robots'),
+    url(r'^turbo.rss', views.turbo, name='turbo'),
 ]
 
 if settings.DEBUG:
