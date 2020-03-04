@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>https://ittas.by/</loc>
+	<lastmod>2019-11-21T08:46:20+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://ittas.by/company/o-kompanii/</loc>
+	<lastmod>2019-11-21T08:46:20+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/company/razrabotka-programmnogo-obespecheniya/</loc>
+	<lastmod>2019-11-21T08:46:24+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/company/soprovozhdenie-po/</loc>
+	<lastmod>2019-11-21T08:46:23+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/company/audit-is/</loc>
+	<lastmod>2019-11-21T08:46:26+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/solutions/cna/</loc>
+	<lastmod>2019-11-21T08:46:24+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/solutions/scna/</loc>
+	<lastmod>2019-11-21T08:46:24+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/solutions/d-key/</loc>
+	<lastmod>2019-11-21T08:46:25+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/solutions/itvpn/</loc>
+	<lastmod>2019-11-21T08:46:25+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/laboratory/oblast-akkreditacii/</loc>
+	<lastmod>2019-11-21T08:46:26+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/laboratory/sertification/</loc>
+	<lastmod>2019-11-21T08:46:26+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/laboratory/attestation/</loc>
+	<lastmod>2019-11-21T08:46:27+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/laboratory/ekspertiza/</loc>
+	<lastmod>2019-11-21T08:46:27+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/contacts/</loc>
+	<lastmod>2019-11-21T08:46:29+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ittas.by/vacancies/</loc>
+	<lastmod>2019-11-21T08:46:28+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ittas.by/static/files/cna.pdf</loc>
+	<lastmod>2019-11-21T08:46:29+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/static/files/scna.pdf</loc>
+	<lastmod>2019-11-21T08:46:29+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/static/files/dkey.pdf</loc>
+	<lastmod>2019-11-21T08:46:32+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/static/files/itvpn.pdf</loc>
+	<lastmod>2019-11-21T08:46:32+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://ittas.by/static/files/exeption.txt</loc>
+	<lastmod>2019-11-21T08:46:30+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+</urlset>

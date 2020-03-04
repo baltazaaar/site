@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>itVPN - Программное средство канального шифрования | Ittas.by</title>
+    <meta name="description"  content="Устройство стоечного исполнения, обеспечивающее аппаратное шифрование передаваемого трафика" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/base.css" %}" />
+    <link rel="stylesheet" href="{% static "css/responsive.css" %}" />
+    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+</head>
+
+<body>
+<div class="wrapper">
+    {% include "menu.html" %}
+<hr>
+    <div class="content-wrapper">
+        <!--
+        <div class="row group textdecor">
+            <div class="col-md-8 col-md-offset-2 cna-h1 col-xs-10 col-xs-offset-1">
+                <h1>itVPN - Программное средство канального шифрования</h1>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 ">
+                <h2>Назначение</h2>
+                <p>sCNA: Высокопроизводительный аппаратный криптографический шлюз.
+                    Полная совместимость с любыми устройствами линейки CNA (в т.ч. персональными средствами защиты сетевого траффика).</p>
+                <p>Предназначен для криптографической защиты (шифрования) сетевого траффика.</p>
+            </div>
+            <div class="col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0 scnainfo">
+                <div class="col-md-6 col-sm-12 col-xs-6">
+                    <p class="goods">100%</p>
+                    <p class="p-goods">Реализация аппаратного шифрования</p>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-6">
+                    <p class="goods">15&nbsp;<span>минут</span></p>
+                    <p class="p-goods">На внедрение в сеть организации</p>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row group textdecor scnafunc">
+
+                <div class="col-xs-8 col-xs-offset-2 cna-h1">
+                    <h1>itVPN - Программное средство канального шифрования</h1>
+                    <p>Программное средство канального шифрования itVPN - сертифицированное в Республике Беларусь
+                        программное средство канального шифрования, реализующее технологии виртуальной частной сети.
+                        Обеспечивает конфиденциальность и контроль целостности, передаваемой по виртуальным каналам
+                        информации, с использованием криптографических стандартов, принятых в Республике Беларусь: </p>
+                    <ul style="margin-left: 50px;">
+                        <li>Шифрование и контроль целостности сетевого траффика в соответствии с СТБ 34.101.31</li>
+                        <li>Аутентификация сторон и выработка общего сеансового ключа в соответствии с СТБ 34.101.65 (прил. В)</li>
+                    </ul><br>
+
+                    <p>Поддерживаемые варианты аутентификации и выработки общего сеансового ключа:</p>
+                    <ul style="margin-left: 50px;">
+                        <li>Использование личных ключей и сертификатов открытых ключей, соответствующих СТБ 34.101.19</li>
+                        <li>Использование предварительно распределенных секретов «pre-shared key» (PSK)</li>
+                    </ul><br>
+
+                    <p>Варианты хранения долговременных ключей:</p>
+                    <ul style="margin-left: 50px;">
+                        <li>Защищенный файловый криптографический контейнер - «secure cryptographic token» (SCT) с защитой объектов согласно СТБ 34.101.45 (прил. Е)</li>
+                        <li>Аппаратные устройства криптографической защиты информации: </li>
+                            <ul style="margin-left: 50px;">
+                                <li>D-Key (ТУ BY 192135880.002-2014)</li>
+                                <li>D-KeySD (ТУ BY 192436431.003-2018)</li>
+                            </ul>
+                    </ul><br>
+
+                    <p>Программное средство канального шифрования itVPN допускается к использованию с в
+                        информационных системах классов: <i><b>4-фл; 4-юл; 3-фл; 3-юл</b></i> в классификации
+                        Приказа Оперативно-аналитического центра при Президенте Республики Беларусь от 30.08.2013 No62
+                        в редакции приказа Оперативно-аналитического центра при Президенте Республики Беларусь от 11.10.2017 No64.</p><br>
+                </div>
+
+        </div>
+
+        <div class="row make-reserve sertcna">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="col-lg-5 col-lg-offset-1  col-md-6 ">
+                    <p class="text-reserve">Устройство имеет сертификат Оперативно-аналитического центра при Президенте
+                        Республики Беларусь №BY/112 02.01.036 00915 от 18.11.2019 на соответствие требованиям
+                        технического регламента ТР 2013/027/BY.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1  col-md-5 col-md-offset-1">
+                    <a href="/static/files/itvpn.pdf" target="_blank"><img src="/static/images/pages/itvpn-cert.jpg" alt="Сертификат соответствия itVPN" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row group textdecor scnafunc">
+            <div class="col-xs-8 col-xs-offset-2 cna-h1">
+                <p>Программное средство канального шифрования «itVPN» распространяется под лицензией GPL за <a href="/static/files/exeption.txt" target="_blank">исключением</a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    {% include "footer.html" %}
+</div>
+<!-- Скрипты -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

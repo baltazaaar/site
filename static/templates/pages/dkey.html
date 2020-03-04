@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Dkey - программно-аппаратное средство криптографический защиты информации | Ittas.by</title>
+    <meta name="description"  content="Устройство выработки и проверки ЭЦП, шифрования\расшифрования данных, защищенного хранения ключевой информации и тд" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/base.css" %}" />
+    <link rel="stylesheet" href="{% static "css/responsive.css" %}" />
+    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+</head>
+
+<body>
+<div class="wrapper">
+    {% include "menu.html" %}
+        <!-- <div class="scna-header col-md-12">
+            <img src="/static/images/pages/cna.png"/>
+        </div> -->
+    <hr>
+         <div class="content-wrapper">
+            <div class="row group textdecor">
+                <div class="col-xs-10 col-xs-offset-1 cna-h1">
+                    <h1>Программно-аппаратное средство криптографической защиты информации &quot;D&#8209;Key&quot;</h1>
+                    <p>Программно–аппаратное средство криптографической защиты информации &quot;D&#8209;Key&quot;
+                        предназначено для безопасного хранения и использования паролей, цифровых сертификатов, ключей
+                        шифрования, а также реализации функций криптографической защиты информации
+                        (шифрования / расшифрования, выработки и проверки ЭЦП, HASH).</p>
+                    <p><strong>Интерфейс:</strong> USB 1.1, USB 2.0;</p>
+                    <p><strong>Габаритные размеры:</strong> 75*18*10 мм;</p>
+                    <p><strong>Масса:</strong> 16,3 г;</p>
+                    <p><strong>Поддерживаемые операционные системы:</strong> Windows 7/2008/2003/2000/XP, Семейство *NIX4;</p>
+                    <p><strong>Поддерживаемые стандарты:</strong> ISO/IEC 7816, PC/SC, Smartcard API;</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row group textdecor">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Функциональные возможности D&#8209;key</h2>
+                </div>
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Использование физического генератора случайных чисел;</li>
+                            <li>Возможность одновременного использования до 10 сертификатов;</li>
+                            <li>Разграничение прав доступа оператора и администратора;</li>
+                            <li>Ведение внутреннего протокола действий пользователя;</li>
+                            <li>Поддержка двух ролей пользователей (Оператор и Администратор);</li>
+                            <li>Блокировка устройства при превышении заданного порога неудачных попыток ввода PIN-кода;</li>
+                            <li>Контроль целостности системных объектов перед их использованием;</li>
+                            <li>Генерация ключей и параметров криптографических алгоритмов и протоколов с использованием физического генератора случайных чисел;</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Аутентификация пользователей по PIN-коду;</li>
+                            <li>Разблокировка устройства по PUK-коду пользователя;</li>
+                            <li>Полная блокировка устройства с невозможностью извлечения данных и ключей устройства (при блокировке PIN-кодов и PUK-кодов пользователей);</li>
+                            <li>Смена PIN-кодов и PUK-кодов операторов;</li>
+                            <li>Аппаратная защита от чтения секретных ключей и параметров при их хранении;</li>
+                            <li>Защищенный экспорт и импорт сеансовых ключей шифрования;</li>
+                            <li>Хранение секретных ключей и параметров с контролем целостности;</li>
+                            <li>Аппаратная реализация криптографических алгоритмов (шифрования, ЭЦП, HASH).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <hr>
+            <div class="row group">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Технические характеристики D&#8209;key</h2>
+                    <table class="table table-striped">
+                        <tbody>
+                              <tr>
+                                <td>Протокол USB</td>
+                                <td>CCID class USB device (стандартный драйвер протокола класса CCID устройств Windows)</td>
+                              </tr>
+                              <tr>
+                                <td>Организация памяти</td>
+                                <td>Файловая система, совместимая с ISO/IEC 7816</td>
+                              </tr>
+                              <tr>
+                                <td>Память, доступная пользователю</td>
+                                <td>261Кб (объем позволяет разместить более чем один рабочий набор параметров и ключей)</td>
+                              </tr>
+                              <tr>
+                                <td>Уникальный ID-номер для каждого устройства</td>
+                                <td>100 байт</td>
+                              </tr>
+                              <tr>
+                                <td>Частота работы</td>
+                                <td>168 Мгц</td>
+                              </tr>
+                              <tr>
+                                <td>Срок хранения данных в памяти</td>
+                                <td>минимум 20 лет</td>
+                              </tr>
+                              <tr>
+                                <td>Потребляемая мощность</td>
+                                <td>Не более 500 мВт</td>
+                              </tr>
+                              <tr>
+                                <td>Рабочая температура</td>
+                                <td>0 — +50 °C</td>
+                              </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+
+            <div class="row group textdecor sertdkey">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="col-lg-5 col-lg-offset-1  col-sm-6 ">
+                        <p>Устройство имеет сертификат Оперативно-аналитического центра при
+                            Президенте Республики Беларусь №BY/112 02.01.036 00685 от 12.03.2019 на соответствие требованиям технического регламента ТР 2013/027/BY.</p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-1  col-sm-5 col-sm-offset-1">
+                        <a href="/static/files/dkey.pdf" target="_blank"><img src="/static/images/pages/dkey-cert.jpg" alt="Сертификат соответствия D-key" /></a>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+    {% include "footer.html" %}
+</div>
+<!-- Скрипты -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
