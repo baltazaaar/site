@@ -1,0 +1,57 @@
+{% extends "news/news.html" %}
+{% block head_title %}Новости | Ittas.by{% endblock head_title%}
+{% block head_description %}Новости мира информационной безопасности и компании ИТТАС{% endblock head_description %}
+
+{% block content %}
+    <div class="row group group-news group2 textdecor">
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1" style="margin-top: 50px">
+{# эта форма нихера не работает с юникодом. нужно поробовать через приведение к юникоду всех переменных решить этот косяк #}
+{#            <form method="get" action="">#}
+{#                <input type="text" name="search" placeholder="Поиск по новостям" value="{{ request.GET.search }}" />#}
+{#                <input type="submit" value="Искать" />#}
+{#            </form>#}
+            {% for obj in news_list %}
+                <div class="thumbnail">
+                    <div class="news-block">
+                        <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a></h3>
+                        {% if obj.image %}
+                            <a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}"><img src="{{ obj.image.url }}" class="img-responsive" alt="{{ obj.title }}" /></a>
+                        {% endif %}
+                    </div>
+                        {{ obj.preview|linebreaks }}
+                    <small>{{ obj.publish }}{% if obj.draft %}, <span class="draft">Черновик</span>{% endif %},
+                        {% if obj.read_time == 1 %}
+                            <span class="clock"></span> 1 минута
+                        {% elif obj.read_time == 2 or obj.read_time == 3 or obj.read_time == 4 %}
+                            <span class="clock"></span> {{ obj.read_time }} минуты
+                        {% else %}
+                            <span class="clock"></span> {{ obj.read_time }} минут
+                        {% endif %}
+                    </small>
+
+{#                    <small class="social">#}
+{#                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://new.ittas.by{{ obj.get_absolute_url }}&title={{ obj.title }}&source=http://new.ittas.by{{ obj.get_absolute_url }}" target="_blank"><img src="/static/images/social/link.png" alt="Поделиться в LinkedIn" /></a>#}
+{#                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://new.ittas.by{{ obj.get_absolute_url }}" target="_blank"><img src="/static/images/social/face.png" alt="Поделиться в Facebook" /></a>#}
+{#                        <a href="https://twitter.com/home?status={{ obj.title }}%20http://new.ittas.by{{ obj.get_absolute_url }}" target="_blank"><img src="/static/images/social/twi.png" alt="Поделиться в Twitter" /></a>#}
+{#                    </small>#}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if news_list.has_previous %}
+                <a href="?{{ page_request_var }}={{ news_list.previous_page_number }}{% if request.GET.search %}&q={{ request.GET.q }}{% endif %}">Назад</a>
+            {% endif %}
+
+            <span class="current">
+                Страница {{ news_list.number }} из {{ news_list.paginator.num_pages }}
+            </span>
+
+            {% if news_list.has_next %}
+                <a href="?{{ page_request_var }}={{ news_list.next_page_number }}{% if request.GET.search %}&q={{ request.GET.q }}{% endif %}">Вперёд</a>
+            {% endif %}
+        </span>
+    </div>
+{% endblock content %}
