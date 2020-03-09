@@ -2127,3 +2127,7 @@ small a img {
     margin-top: 40px;
     max-height:96px;
 }
+
+.vacancies img {
+    max-width: 100%;
+}

@@ -53,6 +53,79 @@
                     выглядела идеальной и совершенной.</li>
                 <li><strong>ЭНТУЗИАЗМ</strong> — мы любим то, что делаем и не боимся задерживаться после работы.</li>
             </ul><br>
+
+                <div class="row  group2 textdecor">
+                    <div class="col-sm-12">
+                        <div class="vacancies">
+                            <h2>Свидетельства, сертификаты и лицензии</h2>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <button class="accordion">Свидетельство о государственной регистрации</button>
+                                    <div class="panel">
+                                        <br>
+                                        <div class="col-lg-12 col-md-12">
+                                            <a href="/static/files/documents/registration.pdf" target="_blank"><img src="/static/files/documents/registration.jpg" alt="Свидетельство о государственной регистрации" title="Свидетельство о государственной регистрации" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="accordion">Свидетельство о регистрации резидента ПВТ</button>
+                                    <div class="panel">
+                                        <br>
+                                        <div class="col-lg-12 col-md-12">
+                                            <a href="/static/files/documents/pvt.pdf" target="_blank"><img src="/static/files/documents/pvt.jpg" alt="Свидетельство о регистрации резидента ПВТ" title="Свидетельство о регистрации резидента ПВТ" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <button class="accordion">Специальное разрешение (Лицензия ОАЦ)</button>
+                                    <div class="panel">
+                                        <br>
+                                        <div class="col-lg-12 col-md-12">
+                                            <a href="/static/files/documents/license.pdf" target="_blank"><img src="/static/files/documents/license.jpg" alt="Специальное разрешение (Лицензия ОАЦ)" title="Специальное разрешение (Лицензия ОАЦ)" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="accordion">Аттестат аккредитации ИЛ</button>
+                                    <div class="panel">
+                                         <br>
+                                        <div class="col-lg-12 col-md-12">
+                                            <a href="/static/files/documents/attestat.pdf" target="_blank"><img src="/static/files/documents/attestat.jpg" alt="Аттестат аккредитации ИЛ" title="Аттестат аккредитации ИЛ" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <button class="accordion">Сертификат соответствия СТБ ISO 9001-2015</button>
+                                    <div class="panel">
+                                        <br>
+                                        <div class="col-lg-12 col-md-12">
+                                            <a href="/static/files/documents/iso.pdf" target="_blank"><img src="/static/files/documents/iso.jpg" alt="Сертификат соответствия СТБ ISO 9001-2015" title="Сертификат соответствия СТБ ISO 9001-2015" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="accordion">Политика в области качества</button>
+                                    <div class="panel">
+                                        <br>
+                                        <div class="col-lg-12 col-md-12">
+                                            <a href="/static/files/documents/politica.pdf" target="_blank"><img src="/static/files/documents/politica.jpg" alt="Политика в области качества" title="Политика в области качества" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            <br>
             <p>Мы готовы работать с клиентами из любых точек земного шара.
                 Готовы взять проекты по разработке и сопровождению ПО на аутсорсинг.</p>
             <p>Если у Вас возникли дополнительные вопросы, задавайте их по телефону <a href="tel:+375173180850">+375 17 318-08-50</a>
@@ -64,6 +137,17 @@
     {% include "footer.html" %}
 </div>
 <!-- Скрипты -->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+</script>
 <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
