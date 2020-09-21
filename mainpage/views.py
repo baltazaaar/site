@@ -115,8 +115,3 @@ def robots(request):
 def turbo(request):
 
     return render(request, 'feed.rss', {})
-
-
-def covid(request):
-
-    return render(request, 'pages/covid.html', {})
